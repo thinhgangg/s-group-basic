@@ -1,0 +1,25 @@
+.content {
+  margin: 40px auto;
+  padding: 10px;
+  width: 350px;
+  border: solid #a62929;
+  background-color: #ffffe0;
+  box-sizing: border-box;
+}
+
+.image {
+  width: 250px;
+  border: solid 5px #ffa600;
+}
+
+.text {
+  width: 250px;
+  height: 150px;
+  overflow-y: scroll;
+  border: dashed 5px #ffa600;
+  background-color: #ffff00;
+}
+
+.text-bold {
+  font-weight: 600;
+}
