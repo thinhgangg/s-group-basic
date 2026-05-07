@@ -1,0 +1,217 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  max-width: 1200px;
+  margin: 50px auto;
+  padding: 0 20px;
+}
+
+.header-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 50px;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-size: 20px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.logo span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+.social {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+}
+
+.social a {
+  font-size: 26px;
+  color: #000;
+}
+
+.social i {
+  color: rgb(227, 94, 61);
+}
+
+.main-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  margin-bottom: 50px;
+}
+
+.profile-img {
+  width: 450px;
+  height: auto;
+}
+
+.side-text {
+  flex: 1;
+}
+
+.side-text h1 {
+  font-size: 48px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+
+.stats {
+  display: flex;
+  gap: 45px;
+  list-style: none;
+}
+
+.stats strong {
+  font-size: 38px;
+  color: #f26464;
+  font-weight: 800;
+}
+
+.stats span {
+  color: #555;
+}
+
+.about-me,
+.core-skills,
+.other-skills,
+.work-experience {
+  display: inline-block;
+  border-bottom: 3px solid #f26464;
+  padding-bottom: 8px;
+  text-transform: uppercase;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+.about-section {
+  margin-bottom: 50px;
+}
+
+.about-text {
+  margin-top: 20px;
+  font-size: 24px;
+  line-height: 40px;
+  font-weight: 200;
+}
+
+.button-download {
+  text-align: center;
+  margin-top: 30px;
+}
+
+button {
+  padding: 16px 32px;
+  border: 1px solid #f26464;
+  background: white;
+  color: #f26464;
+  border-radius: 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+button:hover {
+  background: #f26464;
+  color: white;
+}
+
+.skills-section {
+  display: flex;
+  gap: 40px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.skills-section > div {
+  flex: 1;
+  min-width: 0;
+}
+
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  margin-top: 50px;
+}
+
+.skills-list li {
+  font-size: 16px;
+  line-height: 40px;
+  background-color: #fff;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 100px;
+}
+
+.work-experience-section {
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.experience-list {
+  display: flex;
+  gap: 40px;
+  margin-top: 20px;
+}
+
+.experience-list > section {
+  flex: 1;
+}
+
+.year {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.company {
+  font-size: 24px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.position {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.description-list {
+  list-style: disc;
+  font-size: 16px;
+  font-weight: 200;
+  margin-left: 20px;
+  margin-top: 10px;
+  line-height: 30px;
+}
