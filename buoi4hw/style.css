@@ -1,0 +1,99 @@
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 700px;
+  position: relative;
+  overflow: hidden;
+}
+
+.image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.title {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s linear;
+  color: #fff;
+  font-weight: 200;
+}
+
+.title span {
+  font-weight: 800;
+}
+
+.hinh-thoi {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: all 0.3s linear;
+  color: #fff;
+  width: 300px;
+  height: 300px;
+  border: 3px solid #fff;
+  transform: translate(-50%, -50%) rotate(45deg) scale(0.7);
+}
+
+.icon-list {
+  position: absolute;
+  inset: 0;
+}
+
+.icon {
+  position: absolute;
+  color: #fff;
+  font-size: 36px;
+  opacity: 1;
+  transition: all 0.3s linear;
+}
+
+.icon-top-left {
+  top: 35%;
+  left: 35%;
+  transform: translate(-120px, -90px);
+}
+
+.icon-top-right {
+  top: 35%;
+  right: 35%;
+  transform: translate(120px, -90px);
+}
+
+.icon-bottom-left {
+  bottom: 35%;
+  left: 35%;
+  transform: translate(-120px, 90px);
+}
+
+.icon-bottom-right {
+  bottom: 35%;
+  right: 35%;
+  transform: translate(120px, 90px);
+}
+
+.container:hover .title {
+  opacity: 0;
+}
+
+.container:hover .icon {
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.container:hover .hinh-thoi {
+  transform: translate(-50%, -50%) rotate(45deg) scale(1);
+}
