@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: sans-serif;
+        display: flex;
+        min-height: 100vh;
+      }
+
+      /* Sidebar */
+      .sidebar {
+        width: 240px;
+        background: #f5f5f7;
+        border-right: 1px solid #e0e0e0;
+        padding: 24px 12px;
+        flex-shrink: 0;
+      }
+
+      .sidebar-logo {
+        font-size: 16px;
+        font-weight: 600;
+        padding: 0 12px 20px;
+        border-bottom: 1px solid #e0e0e0;
+        margin-bottom: 12px;
+      }
+
+      .nav-group-label {
+        font-size: 11px;
+        font-weight: 600;
+        color: #999;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        padding: 12px 12px 4px;
+      }
+
+      .nav-item {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        padding: 9px 12px;
+        border-radius: 8px;
+        cursor: pointer;
+        font-size: 14px;
+        color: #444;
+        transition:
+          background 0.15s,
+          color 0.15s;
+        user-select: none;
+      }
+
+      .nav-item:hover {
+        background: #eaeaea;
+      }
+
+      .nav-item.active {
+        background: #e8eeff;
+        color: #3355cc;
+        font-weight: 500;
+      }
+
+      /* Accordion — sub-menu */
+      .nav-item.has-sub::after {
+        content: "›";
+        margin-left: auto;
+        font-size: 16px;
+        transition: transform 0.2s;
+      }
+      .nav-item.has-sub.open::after {
+        transform: rotate(90deg);
+      }
+
+      .sub-menu {
+        display: none;
+        padding-left: 16px;
+      }
+      .sub-menu.open {
+        display: block;
+      }
+
+      .sub-item {
+        padding: 7px 12px;
+        font-size: 13px;
+        color: #666;
+        border-radius: 6px;
+        cursor: pointer;
+        transition: background 0.15s;
+      }
+      .sub-item:hover {
+        background: #eaeaea;
+        color: #333;
+      }
+      .sub-item.active {
+        color: #3355cc;
+        font-weight: 500;
+      }
+
+      /* Content area */
+      .content {
+        flex: 1;
+        padding: 32px;
+      }
+    </style>
+  </head>
+  <body>
+    <aside class="sidebar">
+      <div class="sidebar-logo">Dashboard</div>
+
+      <div class="nav-group-label">Chính</div>
+      <div class="nav-item active" data-page="tong-quan">🏠 Tổng quan</div>
+      <div class="nav-item" data-page="bao-cao">📊 Báo cáo</div>
+
+      <div class="nav-group-label">Quản lý</div>
+      <div class="nav-item has-sub" id="nav-users">👥 Người dùng</div>
+      <div class="sub-menu" id="sub-users">
+        <div class="sub-item" data-page="ds-users">Danh sách</div>
+        <div class="sub-item" data-page="them-user">Thêm mới</div>
+        <div class="sub-item" data-page="phan-quyen">Phân quyền</div>
+      </div>
+
+      <div class="nav-item has-sub" id="nav-settings">⚙️ Cài đặt</div>
+      <div class="sub-menu" id="sub-settings">
+        <div class="sub-item" data-page="ca-nhan">Cá nhân</div>
+        <div class="sub-item" data-page="bao-mat">Bảo mật</div>
+      </div>
+    </aside>
+
+    <main class="content" id="content">
+      <h2>Tổng quan</h2>
+      <p>Chọn mục bên trái để xem nội dung.</p>
+    </main>
+
+    <script>
+      // Active nav item khi click
+      const navItems = document.querySelectorAll(".nav-item:not(.has-sub)");
+      const subItems = document.querySelectorAll(".sub-item");
+
+      function setActive(clickedEl, group) {
+        group.forEach((el) => el.classList.remove("active"));
+        clickedEl.classList.add("active");
+      }
+
+      navItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          setActive(item, navItems);
+          const page = item.dataset.page;
+          document.getElementById("content").innerHTML =
+            `<h2>${item.textContent.trim()}</h2><p>Nội dung trang: ${page}</p>`;
+        });
+      });
+
+      subItems.forEach((item) => {
+        item.addEventListener("click", () => {
+          setActive(item, subItems);
+          // Xóa active ở nav-item cha
+          navItems.forEach((n) => n.classList.remove("active"));
+          const page = item.dataset.page;
+          document.getElementById("content").innerHTML =
+            `<h2>${item.textContent.trim()}</h2><p>Nội dung trang: ${page}</p>`;
+        });
+      });
+
+      // Accordion toggle
+      document.getElementById("nav-users").addEventListener("click", () => {
+        document.getElementById("nav-users").classList.toggle("open");
+        document.getElementById("sub-users").classList.toggle("open");
+      });
+
+      document.getElementById("nav-settings").addEventListener("click", () => {
+        document.getElementById("nav-settings").classList.toggle("open");
+        document.getElementById("sub-settings").classList.toggle("open");
+      });
+    </script>
+  </body>
+</html>
