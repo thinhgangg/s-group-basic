@@ -1,4 +1,4 @@
-* {
+﻿* {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -15,7 +15,7 @@ body {
   padding: 20px;
 }
 
-.game-container {
+.game {
   width: 100%;
   max-width: 450px;
   display: flex;
@@ -27,13 +27,13 @@ header {
   text-align: center;
 }
 
-.game-title {
+.game .title {
   font-size: 28px;
   color: #1e293b;
   margin-bottom: 5px;
 }
 
-.control-panel {
+.controls {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -43,21 +43,21 @@ header {
   border: 1px solid #dddddd;
 }
 
-.stat-box {
+.stats {
   font-size: 18px;
   font-weight: bold;
 }
 
-.stat-label {
+.label {
   color: #555555;
   margin-right: 5px;
 }
 
-.stat-value {
+.value {
   color: #007bff;
 }
 
-/* Nút bấm */
+
 .btn {
   font-family: Arial, sans-serif;
   font-size: 14px;
@@ -69,36 +69,36 @@ header {
   text-align: center;
 }
 
-.btn-primary {
+.primary {
   background-color: #007bff;
   color: #ffffff;
 }
 
-.btn-primary:hover {
+.primary:hover {
   background-color: #0056b3;
 }
 
-.btn-success {
+.success {
   background-color: #28a745;
   color: #ffffff;
 }
 
-.btn-success:hover {
+.success:hover {
   background-color: #218838;
 }
 
-/* Bảng chơi game */
-.game-board {
+
+.board {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(4, 1fr);
   gap: 10px;
   width: 100%;
   aspect-ratio: 1 / 1;
-  perspective: 1000px; /* Tạo hiệu ứng 3D khi lật */
+  perspective: 1000px; 
 }
 
-/* Thiết lập Thẻ bài */
+
 .card {
   cursor: pointer;
   user-select: none;
@@ -112,7 +112,7 @@ header {
   transition: transform 0.4s;
 }
 
-/* Khi thẻ bài được lật hoặc đã khớp */
+
 .card.flipped .card-inner,
 .card.matched .card-inner {
   transform: rotateY(180deg);
@@ -132,7 +132,7 @@ header {
   border: 1px solid #cccccc;
 }
 
-/* Mặt trước (khi úp bài) */
+
 .card-front {
   background-color: #007bff;
   color: #ffffff;
@@ -140,21 +140,21 @@ header {
   font-weight: bold;
 }
 
-/* Mặt sau (khi ngửa bài hiển thị emoji) */
+
 .card-back {
   background-color: #ffffff;
   font-size: 32px;
   transform: rotateY(180deg);
 }
 
-/* Khi thẻ bài ghép đúng */
+
 .card.matched .card-back {
   border-color: #28a745;
   background-color: #e2f0d9;
 }
 
-/* Popup chiến thắng (Modal) */
-.modal-overlay {
+
+.modal {
   position: fixed;
   top: 0;
   left: 0;
@@ -167,12 +167,12 @@ header {
   z-index: 1000;
 }
 
-/* Hiển thị modal */
-.modal-overlay.show {
+
+.modal.show {
   display: flex;
 }
 
-.modal-content {
+.modal-box {
   background-color: #ffffff;
   padding: 30px;
   border-radius: 8px;
@@ -182,24 +182,19 @@ header {
   border: 1px solid #cccccc;
 }
 
-.modal-icon {
-  font-size: 48px;
-  margin-bottom: 10px;
-}
-
-.modal-title {
+.modal .title {
   font-size: 24px;
   color: #28a745;
   margin-bottom: 10px;
 }
 
-.modal-text {
+.modal .text {
   font-size: 16px;
   color: #555555;
   margin-bottom: 20px;
 }
 
-.modal-stats {
+.result {
   background-color: #f8f9fa;
   border: 1px solid #dddddd;
   padding: 10px;
@@ -207,24 +202,19 @@ header {
   margin-bottom: 20px;
 }
 
-.modal-stat-item {
+.result-row {
   display: flex;
   justify-content: space-between;
   font-size: 16px;
 }
 
-.modal-stat-label {
-  color: #555555;
-}
-
-.modal-stat-value {
+.result .value {
   font-weight: bold;
-  color: #007bff;
 }
 
-/* Tương thích màn hình nhỏ */
+
 @media (max-width: 400px) {
-  .game-board {
+  .board {
     gap: 8px;
   }
   .card-front {
@@ -234,3 +224,5 @@ header {
     font-size: 24px;
   }
 }
+
+
