@@ -29,6 +29,7 @@ const restartBtn = document.getElementById("restart-btn");
 const winModal = document.getElementById("win-modal");
 const finalMovesSpan = document.getElementById("final-moves");
 const playAgainBtn = document.getElementById("play-again-btn");
+
 function shuffle(array) {
   for (let i = array.length - 1; i > 0; i--) {
     const j = Math.floor(Math.random() * (i + 1));
@@ -36,6 +37,7 @@ function shuffle(array) {
   }
   return array;
 }
+
 function initGame() {
   firstCard = null;
   secondCard = null;
@@ -51,6 +53,7 @@ function initGame() {
     gameBoard.appendChild(cardElement);
   });
 }
+
 function createCardElement(emoji) {
   const card = document.createElement("div");
   card.classList.add("card");
@@ -69,6 +72,7 @@ function createCardElement(emoji) {
   card.addEventListener("click", flipCard);
   return card;
 }
+
 function flipCard() {
   if (lockBoard) return;
   if (this === firstCard) return;
@@ -83,6 +87,7 @@ function flipCard() {
   movesCountSpan.textContent = moves;
   checkForMatch();
 }
+
 function checkForMatch() {
   const isMatch = firstCard.dataset.emoji === secondCard.dataset.emoji;
   if (isMatch) {
@@ -91,6 +96,7 @@ function checkForMatch() {
     unflipCards();
   }
 }
+
 function disableCards() {
   firstCard.classList.add("matched");
   secondCard.classList.add("matched");
@@ -100,6 +106,7 @@ function disableCards() {
     setTimeout(showWinModal, 500);
   }
 }
+
 function unflipCards() {
   lockBoard = true;
   setTimeout(() => {
@@ -108,15 +115,18 @@ function unflipCards() {
     resetSelection();
   }, 800);
 }
+
 function resetSelection() {
   firstCard = null;
   secondCard = null;
   lockBoard = false;
 }
+
 function showWinModal() {
   finalMovesSpan.textContent = moves;
   winModal.classList.add("show");
 }
+
 restartBtn.addEventListener("click", initGame);
 playAgainBtn.addEventListener("click", initGame);
 document.addEventListener("DOMContentLoaded", initGame);
