@@ -23,7 +23,7 @@ let lockBoard = false;
 let moves = 0;
 let matchedPairs = 0;
 
-const gameBoard = document.getElementById("game-board");
+const gameBoard = document.getElementById("board");
 const movesCountSpan = document.getElementById("moves-count");
 const restartBtn = document.getElementById("restart-btn");
 const winModal = document.getElementById("win-modal");
