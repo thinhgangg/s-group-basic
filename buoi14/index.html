@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="game">
+      <header>
+        <h1 class="title">Memory Card Game</h1>
+      </header>
+
+      <div class="controls">
+        <div class="stats">
+          <span>Moves:</span>
+          <span id="moves-count">0</span>
+        </div>
+        <button id="restart-btn" class="btn primary">Restart Game</button>
+      </div>
+
+      <div id="board" class="board"></div>
+    </div>
+
+    <div id="win-modal" class="modal">
+      <div class="modal-box">
+        <h2 class="title">You Win!</h2>
+        <div class="modal-controls">
+          <div class="stats">
+            <span>Total Moves:</span>
+            <span id="final-moves">0</span>
+          </div>
+          <button id="play-again-btn" class="btn primary">Play Again</button>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
