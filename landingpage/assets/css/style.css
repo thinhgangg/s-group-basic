@@ -1101,3 +1101,75 @@ footer {
 .slider:hover .custom-next {
   opacity: 1;
 }
+
+/* Fixed Buttons */
+.fixed-buttons {
+  position: fixed;
+  right: 30px;
+  bottom: 30px;
+  z-index: 1000;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.btn-fixed {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 50px;
+  aspect-ratio: 1;
+
+  border: none;
+  border-radius: 50%;
+
+  color: #fff;
+  font-size: 20px;
+  cursor: pointer;
+
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+
+  transition: all 0.2s ease-in-out;
+}
+
+/* Scroll top */
+.btn-scroll-top {
+  width: 40px;
+  background: #001c4e;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.btn-scroll-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+.btn-scroll-top:hover {
+  background: #209b24;
+}
+
+/* Robot */
+.btn-robot {
+  width: 60px;
+  background: #fff;
+  overflow: hidden;
+  padding: 0;
+}
+
+.btn-robot img {
+  width: 55px;
+  object-fit: cover;
+}
+
+/* Chat */
+.btn-chat {
+  background: #00d084;
+}
+
+.btn-chat:hover {
+  background: #04ffa3;
+}

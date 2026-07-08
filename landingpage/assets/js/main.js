@@ -90,4 +90,19 @@ $(document).ready(function () {
   );
 
   animatedElements.forEach((el) => observer.observe(el));
+
+  const bannerHeight = $(".banner-slider").outerHeight();
+  const $scrollTopBtn = $("#scrollTopBtn");
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > bannerHeight) {
+      $scrollTopBtn.addClass("show");
+    } else {
+      $scrollTopBtn.removeClass("show");
+    }
+  });
+
+  $scrollTopBtn.click(function () {
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
 });
