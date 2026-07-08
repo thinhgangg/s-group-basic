@@ -70,6 +70,7 @@ $(document).ready(function () {
     ],
   });
 
+  // Intersection Observer for Animations
   const animatedElements = document.querySelectorAll(
     ".fade-up, .fade-right, .fade-left",
   );
@@ -91,6 +92,7 @@ $(document).ready(function () {
 
   animatedElements.forEach((el) => observer.observe(el));
 
+  // Scroll to Top Button
   const bannerHeight = $(".banner-slider").outerHeight();
   const $scrollTopBtn = $("#scrollTopBtn");
 
