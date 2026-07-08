@@ -281,6 +281,12 @@ header {
 }
 
 /* banner */
+.banner-slider {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .banner {
   position: relative;
   width: 100%;
@@ -293,6 +299,7 @@ header {
   width: 100%;
   height: auto;
   margin-top: 64px;
+  margin-bottom: 48px;
 }
 
 .banner-text {
@@ -307,6 +314,36 @@ header {
 .banner-title {
   font-size: clamp(36px, 4vw, 48px);
   font-weight: 700;
+}
+
+.banner-description {
+  font-size: clamp(14px, 3vw, 16px);
+  margin-top: 16px;
+  max-width: 500px;
+  font-weight: 500;
+}
+
+.banner-title span::before {
+  content: "";
+  width: 62px;
+  height: 40px;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: inline-block;
+  position: absolute;
+}
+
+.banner-title span.green1::before {
+  background-image: url(../images/icon_leaf.png);
+
+  right: 0;
+  top: -15px;
+}
+
+.banner-title span.green2::before {
+  background-image: url(../images/icon-green2.png);
+  bottom: 20px;
+  right: 90px;
 }
 
 /* highlights */
@@ -983,4 +1020,33 @@ footer {
 
 .ft-bottom-right-social a:hover {
   background-color: #209b24;
+}
+
+/* Animation */
+.fade-up,
+.fade-right,
+.fade-left {
+  opacity: 0;
+  backface-visibility: hidden;
+  transition:
+    opacity 0.6s ease-in-out,
+    transform 0.6s ease-in-out;
+  transition-delay: var(--delay, 0ms);
+}
+
+.fade-up {
+  transform: translateY(200px);
+}
+.fade-right {
+  transform: translateX(-150px);
+}
+.fade-left {
+  transform: translateX(150px);
+}
+
+.fade-up.show,
+.fade-right.show,
+.fade-left.show {
+  opacity: 1;
+  transform: translate(0, 0);
 }

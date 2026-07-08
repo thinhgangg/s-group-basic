@@ -9,7 +9,9 @@
       type="image/x-icon"
       href="https://rangdong.com.vn/favicon.ico"
     />
+    <!-- css -->
     <link rel="stylesheet" href="./assets/css/style.css" />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
@@ -17,6 +19,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"
@@ -26,6 +29,14 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"
     />
+
+    <!-- js -->
+    <script defer src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"
+    ></script>
+    <script defer type="module" src="assets/js/main.js"></script>
   </head>
   <body>
     <!-- header -->
@@ -495,21 +506,84 @@
     </header>
 
     <!-- banner -->
-    <div class="banner">
-      <img src="./assets/images/slide-05.jpg" alt="banner" />
-      <div class="banner-text">
-        <div>
-          <h2 class="banner-title">
-            Tiết kiệm Năng lượng <br />
-            Thịnh vượng tương lai
-          </h2>
-        </div>
-        <a href="#">
-          <div class="banner-btn">
-            Khám phá ngay
-            <i class="fa-solid fa-arrow-right"></i>
+    <div class="banner-slider">
+      <div class="banner">
+        <img src="./assets/images/slide-05.jpg" alt="banner" />
+        <div class="banner-text">
+          <div>
+            <h2 class="banner-title fade-right">
+              Tiết kiệm Năng lượng <span class="green1"></span>
+              <br />
+              Thịnh vượng tương lai
+            </h2>
           </div>
-        </a>
+          <a href="#">
+            <div class="banner-btn fade-right" style="--delay: 100ms">
+              Khám phá ngay
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img src="./assets/images/slide-06.jpg" alt="banner" />
+        <div class="banner-text">
+          <div>
+            <h2 class="banner-title fade-right">
+              RẠNG ĐÔNG SMART CITY <br />
+              Kiến tạo đô thị Xanh <br />
+              Thông minh - Bền vững
+            </h2>
+          </div>
+          <a href="#">
+            <div class="banner-btn fade-right" style="--delay: 100ms">
+              Khám phá ngay
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img src="./assets/images/slide-07.jpg" alt="banner" />
+        <div class="banner-text fade-right">
+          <div>
+            <h2 class="banner-title">
+              Tiết kiệm Năng lượng <span class="green1"></span>
+              <br />
+              Thịnh vượng tương lai
+            </h2>
+            <p class="banner-description fade-right" style="--delay: 100ms">
+              Giải pháp năng lượng và công nghệ giúp giảm chi phí điện năng,
+              nâng cao tiện nghi và kiến tạo cuộc sống bền vững
+            </p>
+          </div>
+          <a href="#">
+            <div class="banner-btn fade-right" style="--delay: 100ms">
+              Khám phá ngay
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+
+      <div class="banner">
+        <img src="./assets/images/slide-08.jpg" alt="banner" />
+        <div class="banner-text">
+          <div>
+            <h2 class="banner-title fade-right">
+              Thiết bị điện đạt chuẩn <br />
+              cho ngôi nhà Việt <span class="green2"></span>
+            </h2>
+          </div>
+          <a href="#">
+            <div class="banner-btn fade-right" style="--delay: 100ms">
+              Khám phá ngay
+              <i class="fa-solid fa-arrow-right"></i>
+            </div>
+          </a>
+        </div>
       </div>
     </div>
 
@@ -517,15 +591,15 @@
     <section class="highlights">
       <div class="highlights-container">
         <div class="section-heading">
-          <h2>Các lĩnh vực nổi bật</h2>
-          <p>
+          <h2 class="fade-up">Các lĩnh vực nổi bật</h2>
+          <p class="fade-up" style="--delay: 100ms">
             Doanh nghiệp Khoa học công nghệ làm chủ toàn bộ chuỗi giá trị, tiên
             phong kiến tạo Hệ sinh thái Xanh - Thông minh
           </p>
         </div>
 
         <div class="highlight-list">
-          <div class="highlight-card">
+          <div class="highlight-card fade-up" style="--delay: 200ms">
             <div class="highlight-card-img">
               <a href="https://rangdong.com.vn/category/indoor">
                 <img src="./assets/images/field-1.jpg" alt="Smart indoor" />
@@ -541,7 +615,7 @@
             </div>
           </div>
 
-          <div class="highlight-card">
+          <div class="highlight-card fade-up" style="--delay: 300ms">
             <div class="highlight-card-img">
               <a href="https://rangdong.com.vn/category/outdoor">
                 <img src="./assets/images/field-2.jpg" alt="Smart outdoor" />
@@ -557,7 +631,7 @@
             </div>
           </div>
 
-          <div class="highlight-card">
+          <div class="highlight-card fade-up" style="--delay: 400ms">
             <div class="highlight-card-img">
               <a href="https://rangdong.com.vn/category/industrial">
                 <img src="./assets/images/field-3.jpg" alt="Smart industrial" />
@@ -580,11 +654,11 @@
     <section class="reasons">
       <div class="reasons-container">
         <div class="section-heading">
-          <h2>Vì sao chọn Rạng Đông?</h2>
+          <h2 class="fade-up">Vì sao chọn Rạng Đông?</h2>
         </div>
 
         <div class="reasons-grid">
-          <div class="reasons-intro">
+          <div class="reasons-intro fade-right" style="--delay: 100ms">
             <h3 class="reasons-intro-title">Thương hiệu quốc dân gần 70 năm</h3>
             <p class="reasons-desc">
               Rạng Đông kết hợp năng lực nghiên cứu công nghệ chiếu sáng với các
@@ -594,7 +668,7 @@
             </p>
           </div>
 
-          <div class="reasons-badge">
+          <div class="reasons-badge fade-left" style="--delay: 100ms">
             <img
               src="./assets/images/medal.png"
               alt="Thương hiệu quốc dân gần 70 năm"
@@ -606,7 +680,7 @@
             </div>
           </div>
 
-          <div class="reasons-card">
+          <div class="reasons-card fade-right" style="--delay: 200ms">
             <a href="#" class="reasons-card-image-wrapper">
               <img
                 src="./assets/images/why-us-1.png"
@@ -627,7 +701,7 @@
             </p>
           </div>
 
-          <div class="reasons-card">
+          <div class="reasons-card fade-left" style="--delay: 200ms">
             <a href="#" class="reasons-card-image-wrapper">
               <img
                 src="./assets/images/why-us-2.png"
@@ -646,7 +720,7 @@
             </p>
           </div>
 
-          <div class="reasons-card">
+          <div class="reasons-card fade-right" style="--delay: 300ms">
             <a href="#" class="reasons-card-image-wrapper">
               <img
                 src="./assets/images/why-us-3.jpg"
@@ -663,7 +737,7 @@
             </p>
           </div>
 
-          <div class="reasons-card">
+          <div class="reasons-card fade-left" style="--delay: 300ms">
             <a href="#" class="reasons-card-image-wrapper">
               <img
                 src="./assets/images/why-us-4.jpg"
@@ -690,22 +764,22 @@
     <section class="connect">
       <div class="connect-container">
         <div class="connect-text-side">
-          <h2 class="connect-title">
+          <h2 class="connect-title fade-right">
             Rallismart : Nền tảng kết nối thiết bị thông minh do Rạng Đông làm
             chủ
           </h2>
-          <p class="connect-desc">
+          <p class="connect-desc fade-right" style="--delay: 100ms">
             Rạng Đông cung cấp Rallismart như một nền tảng mở, kiến trúc module
             hóa, cho phép triển khai linh hoạt theo quy mô và loại hình công
             trình, dự án.
           </p>
-          <p class="connect-desc">
+          <p class="connect-desc fade-right" style="--delay: 200ms">
             Hỗ trợ kết nối, tích hợp với các hệ thống BMS thông qua các giao
             thức tiêu chuẩn như BACnet, Modbus, MQTT, API, cho phép đồng bộ dữ
             liệu hai chiều giữa nền tảng IoT và hệ thống quản lý trung tâm.
           </p>
           <a href="#">
-            <div class="learn-more-btn">
+            <div class="learn-more-btn fade-right" style="--delay: 300ms">
               Tìm hiểu thêm
               <i class="fa-solid fa-arrow-right"></i>
             </div>
@@ -718,18 +792,18 @@
     <section class="ecosystem">
       <div class="ecosystem-container">
         <div class="section-heading">
-          <h2 class="ecosystem-title">
+          <h2 class="ecosystem-title fade-up">
             Hệ sinh thái Giải pháp Xanh - Thông minh
           </h2>
           <a href="#">
-            <div class="learn-more-btn">
+            <div class="learn-more-btn fade-up" style="--delay: 100ms">
               Tìm hiểu thêm
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </a>
         </div>
 
-        <div class="slider ecosystem-slider">
+        <div class="slider ecosystem-slider fade-up" style="--delay: 200ms">
           <div class="slide">
             <div class="slide-card">
               <div class="slide-card-img">
@@ -886,18 +960,18 @@
 
       <div class="overview-container">
         <div class="section-heading">
-          <h2 class="ecosystem-title">
+          <h2 class="ecosystem-title fade-up">
             Tổng quan về công trình Xanh - Thông minh
           </h2>
           <a href="#">
-            <div class="learn-more-btn">
+            <div class="learn-more-btn fade-up" style="--delay: 100ms">
               Tìm hiểu thêm
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </a>
         </div>
 
-        <div class="overview-certificates">
+        <div class="overview-certificates fade-up" style="--delay: 200ms">
           <img src="./assets/images/logo-overview-1.png" alt="LEED" />
           <img src="./assets/images/logo-overview-2.png" alt="LOTUS" />
         </div>
@@ -908,16 +982,16 @@
     <section class="featured-projects">
       <div class="featured-projects-container">
         <div class="section-heading">
-          <h2 class="featured-projects-title">Công trình tiêu biểu</h2>
+          <h2 class="featured-projects-title fade-up">Công trình tiêu biểu</h2>
           <a href="#">
-            <div class="learn-more-btn">
+            <div class="learn-more-btn fade-up" style="--delay: 100ms">
               Tìm hiểu thêm
               <i class="fa-solid fa-arrow-right"></i>
             </div>
           </a>
         </div>
 
-        <div class="slider projects-slider">
+        <div class="slider projects-slider fade-up" style="--delay: 200ms">
           <div class="slide">
             <div class="slide-card">
               <div class="slide-card-img">
@@ -1000,10 +1074,10 @@
     <section class="products">
       <div class="products-container">
         <div class="section-heading">
-          <h2 class="products-title">Sản phẩm tiêu biểu</h2>
+          <h2 class="products-title fade-up">Sản phẩm tiêu biểu</h2>
         </div>
 
-        <div class="products-row-top">
+        <div class="products-row-top fade-up" style="--delay: 100ms">
           <div class="product-banner product-banner-large">
             <a href="#">
               <img
@@ -1027,7 +1101,7 @@
 
         <div class="products-row-bottom">
           <div class="product-wide-box">
-            <div class="product-item">
+            <div class="product-item fade-up" style="--delay: 100ms">
               <a href="#">
                 <img
                   src="./assets/images/sp-2-new.png"
@@ -1036,7 +1110,7 @@
               </a>
             </div>
 
-            <div class="product-item">
+            <div class="product-item fade-up" style="--delay: 100ms">
               <a href="#">
                 <img
                   src="./assets/images/sp-5-new.png"
@@ -1045,7 +1119,7 @@
               </a>
             </div>
 
-            <div class="product-item">
+            <div class="product-item fade-up" style="--delay: 100ms">
               <a href="#">
                 <img
                   src="./assets/images/sp-6-new.png"
@@ -1054,7 +1128,7 @@
               </a>
             </div>
 
-            <div class="product-item">
+            <div class="product-item fade-up" style="--delay: 100ms">
               <a href="#">
                 <img
                   src="./assets/images/sp-7-new.png"
@@ -1149,43 +1223,4 @@
       </div>
     </footer>
   </body>
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-  <script>
-    $(document).ready(function () {
-      $(".ecosystem-slider").slick({
-        autoplay: true,
-        autoplaySpeed: 5000,
-        arrows: true,
-        infinite: true,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ],
-      });
-
-      $(".projects-slider").slick({
-        autoplay: true,
-        autoplaySpeed: 4000,
-        arrows: true,
-        infinite: true,
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        responsive: [
-          {
-            breakpoint: 768,
-            settings: {
-              slidesToShow: 1,
-            },
-          },
-        ],
-      });
-    });
-  </script>
 </html>
