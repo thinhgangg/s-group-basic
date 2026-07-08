@@ -1050,3 +1050,54 @@ footer {
   opacity: 1;
   transform: translate(0, 0);
 }
+
+/* Slider previous and next arrows */
+.slider {
+  position: relative;
+}
+
+.custom-prev,
+.custom-next {
+  position: absolute;
+  top: 45%;
+  transform: translateY(-50%);
+  z-index: 10;
+
+  width: 42px;
+  height: 42px;
+
+  border: none;
+  border-radius: 50%;
+
+  background: #d1d1d1c2;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(8px);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  cursor: pointer;
+  transition: 0.3s;
+
+  opacity: 0;
+}
+
+.custom-prev {
+  left: 16px;
+}
+
+.custom-next {
+  right: 16px;
+}
+
+.custom-prev i,
+.custom-next i {
+  font-size: 16px;
+  color: #222;
+}
+
+.slider:hover .custom-prev,
+.slider:hover .custom-next {
+  opacity: 1;
+}

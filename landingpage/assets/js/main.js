@@ -23,6 +23,16 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
+    prevArrow: `
+      <button class="slick-arrow custom-prev">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+    `,
+    nextArrow: `
+      <button class="slick-arrow custom-next">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    `,
     responsive: [
       {
         breakpoint: 768,
@@ -40,6 +50,16 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 4,
     slidesToScroll: 1,
+    prevArrow: `
+      <button class="slick-arrow custom-prev">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+    `,
+    nextArrow: `
+      <button class="slick-arrow custom-next">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    `,
     responsive: [
       {
         breakpoint: 768,
