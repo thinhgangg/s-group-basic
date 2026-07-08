@@ -506,8 +506,150 @@
             </ul>
 
             <!-- search -->
-            <div class="search">
-              <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="search-box">
+              <div class="search-input-group" id="searchInputGroup">
+                <input
+                  type="text"
+                  id="searchInput"
+                  class="search-input"
+                  placeholder="Tìm kiếm sản phẩm..."
+                  autocomplete="off"
+                />
+                <button type="button" class="search-btn" id="searchBtn">
+                  <svg
+                    class="search-icon"
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 119.828 122.88"
+                    aria-hidden="true"
+                  >
+                    <path
+                      fill="currentColor"
+                      d="M48.319,0C61.662,0,73.74,5.408,82.484,14.152c8.744,8.744,14.152,20.823,14.152,34.166
+                        c0,12.809-4.984,24.451-13.117,33.098c0.148,0.109,0.291,0.23,0.426,0.364l34.785,34.737
+                        c1.457,1.449,1.465,3.807,0.014,5.265c-1.449,1.458-3.807,1.464-5.264,0.015L78.695,87.06
+                        c-0.221-0.22-0.408-0.46-0.563-0.715c-8.213,6.447-18.564,10.292-29.814,10.292
+                        c-13.343,0-25.423-5.408-34.167-14.152C5.408,73.741,0,61.661,0,48.318s5.408-25.422,14.152-34.166
+                        C22.896,5.409,34.976,0,48.319,0L48.319,0z
+                        M77.082,19.555c-7.361-7.361-17.53-11.914-28.763-11.914
+                        c-11.233,0-21.403,4.553-28.764,11.914C12.194,26.916,7.641,37.085,7.641,48.318
+                        c0,11.233,4.553,21.403,11.914,28.764c7.36,7.361,17.53,11.914,28.764,11.914
+                        c11.233,0,21.402-4.553,28.763-11.914c7.361-7.36,11.914-17.53,11.914-28.764
+                        C88.996,37.085,84.443,26.916,77.082,19.555z"
+                    />
+                  </svg>
+                </button>
+              </div>
+            </div>
+
+            <div class="search-result" id="searchResult">
+              <!-- Cột 1: Danh mục gợi ý -->
+              <div class="search-col">
+                <h3 class="search-col-title">Danh mục gợi ý</h3>
+
+                <a class="search-col-result" href="#">Chiếu sáng outdoors</a>
+                <a class="search-col-result" href="#">Chiếu sáng học đường</a>
+                <a class="search-col-result" href="#">Chiếu sáng ngư nghiệp</a>
+                <a class="search-col-result" href="#">Chiếu sáng nhà xưởng</a>
+                <a class="search-col-result" href="#">Chiếu sáng đường</a>
+                <a class="search-col-result" href="#"
+                  >Chiếu sáng văn phòng công sở</a
+                >
+                <a class="search-col-result" href="#"
+                  >Chiếu sáng nông nghiệp CNC</a
+                >
+                <a class="search-col-result" href="#">Chiếu sáng nhà ở</a>
+              </div>
+
+              <!-- Cột 2: Sản phẩm gợi ý -->
+              <div class="search-col">
+                <h3 class="search-col-title">Sản phẩm gợi ý</h3>
+                <div class="prod-list">
+                  <!-- Sản phẩm 1 -->
+                  <a href="#" class="prod-item">
+                    <div class="prod-img">
+                      <img
+                        src="https://rangdong.com.vn/uploads/products/nha-thong-minh/cong-tac-thong-minh/cong-tac-den/ctcu-wf-cn/ctcu-wf-cn-01t/ctcu-wf-cn-01t-1.jpg"
+                        alt="Công tắc cảm ứng"
+                      />
+                    </div>
+                    <div class="prod-info">
+                      <p class="name">
+                        Công tắc cảm ứng thông minh wifi chữ nhật 2 chiều 1 nút
+                        bấm <br />
+                        CTCU.WF CN.01T.2W.SP
+                      </p>
+                      <p class="price">700.000 VNĐ</p>
+                    </div>
+                  </a>
+                  <!-- Sản phẩm 2 -->
+                  <a href="#" class="prod-item">
+                    <div class="prod-img">
+                      <img
+                        src="https://rangdong.com.vn/uploads/products/thiet-bi-dien/o-cam-dien/oc-01-wf-16a/oc-01-wf-16a-0.jpg"
+                        alt="Ổ cắm đơn thông minh wifi OC.01"
+                      />
+                    </div>
+                    <div class="prod-info">
+                      <p class="name">
+                        Ổ cắm đơn thông minh wifi OC.01 <br />
+                        OC.01.WF 16A
+                      </p>
+                      <p class="price">304.000 VNĐ</p>
+                    </div>
+                  </a>
+                  <!-- Sản phẩm 3 -->
+                  <a href="#" class="prod-item">
+                    <div class="prod-img">
+                      <img
+                        src="https://rangdong.com.vn/uploads/products/nha-thong-minh/cam-bien-thong-minh/bo-dieu-khien/dk01-ir-rf-wf/rd-ir-wf.jpg"
+                        alt="Điều khiển từ xa đa năng thông minh wifi ĐK01.IR.RF.WF"
+                      />
+                    </div>
+                    <div class="prod-info">
+                      <p class="name">
+                        Điều khiển từ xa đa năng thông minh wifi
+                        <br />
+                        ĐK01.IR.RF.WF
+                      </p>
+                      <p class="price">470.000 VNĐ</p>
+                    </div>
+                  </a>
+                </div>
+                <a href="#" class="search-more">Xem tất cả</a>
+              </div>
+
+              <!-- Cột 3: Bài viết gợi ý -->
+              <div class="search-col">
+                <h3 class="search-col-title">Bài viết gợi ý</h3>
+                <div class="news-list">
+                  <!-- Bài viết 1 -->
+                  <a href="#" class="news-item">
+                    <div class="news-img">
+                      <img
+                        src="https://rangdong.com.vn/uploads/news/nang-luong-mat-troi/dien-ap-mai/cau-tao-he-thong-dien-mat-troi-mai-nha.jpg"
+                        alt="Điện mặt trời mái nhà"
+                      />
+                    </div>
+                    <p class="news-title">
+                      Điện mặt trời mái nhà cho hộ gia đình là gì? Giải pháp
+                      tiết kiệm điện cho mọi gia đình
+                    </p>
+                  </a>
+                  <!-- Bài viết 2 -->
+                  <a href="#" class="news-item">
+                    <div class="news-img">
+                      <img
+                        src="https://rangdong.com.vn/uploads/news/nha-thong-minh/nha-thong-minh-la-gi/nha-thong-minh-la-gi-5-uu-diem-cua-nha-thong-minh (8).jpg"
+                        alt="Nhà thông minh là gì? Các đặc điểm của ngôi nhà thông minh"
+                      />
+                    </div>
+                    <p class="news-title">
+                      Nhà thông minh là gì? Các đặc điểm của ngôi nhà thông minh
+                    </p>
+                  </a>
+                </div>
+                <a href="#" class="search-more">Xem tất cả</a>
+              </div>
             </div>
           </div>
         </div>

@@ -107,4 +107,44 @@ $(document).ready(function () {
   $scrollTopBtn.click(function () {
     $("html, body").animate({ scrollTop: 0 }, "slow");
   });
+
+  // Search Functionality
+  const $searchGroup = $("#searchInputGroup");
+  const $searchBtn = $("#searchBtn");
+  const $searchInput = $("#searchInput");
+  const $searchResult = $("#searchResult");
+  const $menuList = $(".menu-list");
+
+  // Xử lý khi bấm vào icon kính lúp
+  $searchBtn.on("click", function (e) {
+    e.stopPropagation();
+
+    if (!$searchGroup.hasClass("active")) {
+      // Mở thanh search
+      $searchGroup.addClass("active");
+      $menuList.addClass("hide-menu");
+      setTimeout(() => {
+        $searchInput.focus();
+        $searchResult.addClass("show");
+      }, 200);
+    } else {
+      if ($searchInput.val().trim() === "") {
+        closeSearch();
+      }
+    }
+  });
+
+  function closeSearch() {
+    $searchGroup.removeClass("active");
+    $searchResult.removeClass("show");
+    $menuList.removeClass("hide-menu");
+    $searchInput.val("");
+  }
+
+  // Đóng khi click ra ngoài
+  $(document).on("click", function (e) {
+    if (!$(e.target).closest(".search-box, #searchResult").length) {
+      closeSearch();
+    }
+  });
 });
