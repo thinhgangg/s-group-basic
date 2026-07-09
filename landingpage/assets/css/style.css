@@ -544,20 +544,16 @@ header {
   background-size: 100%;
   background-repeat: no-repeat;
   display: inline-block;
-  position: absolute;
 }
 
 .banner-title span.green1::before {
   background-image: url(../images/icon_leaf.png);
-
-  right: 0;
-  top: -15px;
+  transform: translate(-32px, -16px);
 }
 
 .banner-title span.green2::before {
   background-image: url(../images/icon-green2.png);
-  bottom: 20px;
-  right: 90px;
+  transform: translate(-32px, -16px);
 }
 
 /* highlights */
