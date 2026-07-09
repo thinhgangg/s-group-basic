@@ -526,12 +526,12 @@ header {
 }
 
 .banner-title {
-  font-size: clamp(36px, 4vw, 48px);
+  font-size: clamp(28px, 4vw, 48px);
   font-weight: 700;
 }
 
 .banner-description {
-  font-size: clamp(14px, 3vw, 16px);
+  font-size: clamp(16px, 3vw, 16px);
   margin-top: 16px;
   max-width: 500px;
   font-weight: 500;
@@ -575,15 +575,16 @@ header {
 }
 
 .section-heading h2 {
-  font-size: clamp(36px, 4vw, 48px);
+  font-size: clamp(26px, 4vw, 48px);
   font-weight: 700;
   color: var(--text-primary);
 }
 
 .section-heading p {
   margin-top: 8px;
-  font-size: 22px;
+  font-size: clamp(16px, 3vw, 22px);
   color: var(--text-primary);
+  line-height: 20px;
 }
 
 .highlight-list {
@@ -623,7 +624,7 @@ header {
 }
 
 .highlight-card-title {
-  font-size: 24px;
+  font-size: clamp(24px, 4vw, 32px);
   font-weight: 700;
 }
 
@@ -669,7 +670,7 @@ header {
 }
 
 .reasons .section-heading h2 {
-  font-size: clamp(32px, 4vw, 40px);
+  font-size: clamp(28px, 4vw, 48px);
   color: var(--text-primary);
   margin-bottom: 40px;
 }
@@ -690,13 +691,13 @@ header {
 
 .reasons-intro-title {
   color: var(--text-primary);
-  font-size: 24px;
+  font-size: clamp(24px, 4vw, 32px);
 }
 
 .reasons-desc {
   color: var(--text-primary);
   line-height: 1.6;
-  font-size: 18px;
+  font-size: clamp(15px, 4vw, 18px);
 }
 
 .reasons-badge {
@@ -708,14 +709,14 @@ header {
 
 .reasons-badge-icon {
   width: auto;
-  height: 280px;
+  height: clamp(160px, 4vw, 280px);
   object-fit: contain;
 }
 
 .reasons-badge-text {
   color: var(--text-primary);
   font-weight: 700;
-  font-size: 32px;
+  font-size: clamp(26px, 4vw, 32px);
   line-height: 1.4;
   text-align: right;
 }
@@ -747,7 +748,7 @@ header {
 
 .reasons-card-title {
   color: var(--text-primary);
-  font-size: 26px;
+  font-size: clamp(18px, 4vw, 26px);
   font-weight: 600;
 }
 
@@ -787,13 +788,13 @@ header {
 }
 
 .connect-title {
-  font-size: 32px;
+  font-size: clamp(26px, 4vw, 48px);
   line-height: 1.3;
   margin-bottom: 16px;
 }
 
 .connect-desc {
-  font-size: 18px;
+  font-size: clamp(15px, 4vw, 18px);
   line-height: 1.6;
   margin-bottom: 16px;
 }
@@ -825,7 +826,7 @@ header {
 }
 
 .ecosystem .section-heading h2 {
-  font-size: clamp(32px, 4vw, 40px);
+  font-size: clamp(26px, 4vw, 48px);
   color: var(--text-primary);
 }
 
@@ -869,7 +870,7 @@ header {
 .overview .section-heading h2 {
   position: relative;
   color: #fff;
-  font-size: clamp(32px, 4vw, 40px);
+  font-size: clamp(26px, 4vw, 48px);
 }
 
 .overview-certificates {
@@ -901,14 +902,14 @@ header {
 }
 
 .featured-projects .section-heading h2 {
-  font-size: clamp(32px, 4vw, 40px);
+  font-size: clamp(26px, 4vw, 48px);
   color: var(--text-primary);
 }
 
 /* featured products */
 .products {
   background-color: #fff;
-  padding: 48px 0 64px;
+  padding: 0 0 48px 0;
   display: flex;
   justify-content: center;
 }
@@ -923,7 +924,7 @@ header {
 }
 
 .products .section-heading h2 {
-  font-size: clamp(32px, 4vw, 40px);
+  font-size: clamp(26px, 4vw, 48px);
   color: var(--text-primary);
 }
 
@@ -1146,24 +1147,24 @@ footer {
 .banner-btn,
 .learn-more-btn {
   width: max-content;
-  min-height: 48px;
+  height: 48px;
   margin-top: 32px;
-  padding: 0 6px 0 32px;
+  padding: 0 8px 0 10px;
   display: inline-flex;
   align-items: center;
-  gap: 16px;
+  gap: 10px;
   border-radius: 999px;
   background-color: #ed1c24;
   color: #fff;
   font-size: 16px;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out !important;
 }
 
 .banner-btn i,
 .learn-more-btn i {
-  width: 42px;
-  height: 42px;
+  width: 36px;
+  height: 36px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1175,7 +1176,7 @@ footer {
 .banner-btn:hover,
 .learn-more-btn:hover {
   box-shadow: 0 8px 14px 0px rgba(237, 28, 36, 0.6);
-  transform: translateY(-2px);
+  transform: translateY(-2px) !important;
 }
 
 /* slider */
@@ -1225,12 +1226,12 @@ footer {
 }
 
 .ecosystem-slider .slide-card-title {
-  font-size: 24px;
-  font-weight: 600;
+  font-size: clamp(18px, 4vw, 22px);
+  font-weight: 500;
 }
 
 .projects-slider .slide-card-title {
-  font-size: 18px;
+  font-size: clamp(18px, 4vw, 22px);
   font-weight: 500;
 }
 
@@ -1473,6 +1474,70 @@ footer {
 
 /* Mobile */
 @media (max-width: 576px) {
+  .search-input-group.active {
+    width: calc(100vw - 120px);
+  }
+
+  .search-result.show {
+    grid-template-columns: 1fr;
+    height: auto;
+    max-height: 75vh;
+    overflow-y: auto;
+    padding-bottom: 20px;
+  }
+
+  .search-col {
+    border-right: none;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  .search-col:last-child {
+    border-bottom: none;
+  }
+
+  /* banner */
+  .banner img {
+    height: 100vh;
+    object-fit: cover;
+  }
+
+  .banner-text {
+    position: absolute;
+    top: 10%;
+  }
+
+  .highlight-list {
+    grid-template-columns: 1fr;
+  }
+
+  .reasons-card-image-wrapper {
+    height: 300px;
+  }
+
+  .connect {
+    background: url(../images/bg_connect_full_mobile.webp);
+    padding-bottom: 400px;
+    background-size: contain;
+  }
+  .connect-wrapper {
+    padding: 0;
+  }
+  .connect-title {
+    font-weight: 500;
+  }
+
+  .overview-container {
+    text-align: center;
+  }
+
+  .overview-certificates {
+    gap: 20px;
+  }
+  .overview-certificates img {
+    width: 120px;
+    height: auto;
+  }
+
   .footer-row-middle > div:last-child {
     display: flex;
     flex-direction: column;
@@ -1490,5 +1555,21 @@ footer {
 
   .ft-bottom-right {
     align-items: flex-start;
+  }
+
+  /* btn */
+  .banner-btn,
+  .learn-more-btn {
+    height: 42px;
+    margin-top: 20px;
+    padding: 0 6px 0 14px;
+    gap: 8px;
+    font-size: 14px;
+  }
+
+  .banner-btn i,
+  .learn-more-btn i {
+    width: 30px;
+    height: 30px;
   }
 }
