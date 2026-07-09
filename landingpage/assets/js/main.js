@@ -37,7 +37,8 @@ $(document).ready(function () {
       {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          arrows: true,
         },
       },
     ],
@@ -62,9 +63,52 @@ $(document).ready(function () {
     `,
     responsive: [
       {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        },
+      },
+      {
         breakpoint: 768,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
+          arrows: true,
+        },
+      },
+    ],
+  });
+
+  $(".products-slider").slick({
+    autoplay: false,
+    autoplaySpeed: 3000,
+    arrows: true,
+    infinite: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    prevArrow: `
+      <button class="slick-arrow custom-prev">
+        <i class="fa-solid fa-angle-left"></i>
+      </button>
+    `,
+    nextArrow: `
+      <button class="slick-arrow custom-next">
+        <i class="fa-solid fa-angle-right"></i>
+      </button>
+    `,
+    responsive: [
+      {
+        breakpoint: 1025,
+        settings: {
+          slidesToShow: 3,
+          arrows: false,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 2,
+          arrows: true,
         },
       },
     ],
