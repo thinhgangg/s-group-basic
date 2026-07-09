@@ -46,6 +46,10 @@
           <img src="./assets/images/logonew.png" alt="Logo Rạng Đông" />
         </a>
 
+        <div class="menu-toggle" id="mobileMenuOpen">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+
         <div class="header-navbar">
           <div class="menu">
             <ul class="menu-list">
@@ -1390,6 +1394,716 @@
       <button class="btn-fixed btn-chat">
         <i class="fa-regular fa-comments"></i>
       </button>
+    </div>
+
+    <!-- Overlay và Sidebar -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="mobile-sidebar" id="mobileSidebar">
+      <!-- header -->
+      <div class="sidebar-header">
+        <img
+          src="./assets/images/logonew.png"
+          alt="Logo"
+          class="sidebar-logo"
+        />
+        <div class="sidebar-close" id="mobileMenuClose">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+      </div>
+
+      <!-- search -->
+      <div class="sidebar-search">
+        <input type="text" placeholder="Tìm kiếm sản phẩm..." />
+        <i class="fa-solid fa-magnifying-glass"></i>
+      </div>
+
+      <div class="sidebar-content">
+        <ul class="mobile-menu-list">
+          <!-- CẤP 1: DỰ ÁN -->
+          <li class="has-child">
+            <div class="menu-row">
+              <span>Dự án</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+            <ul class="mobile-sub">
+              <!-- CẤP 2 giải pháp dịch vụ -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Giải pháp & Dịch vụ</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <!-- CẤP 3: SMART INDOOR -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Smart Indoor</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4: LINKS -->
+                      <li><a href="#">Nhà ở dân cư</a></li>
+                      <li><a href="#">Văn phòng công sở</a></li>
+                      <li><a href="#">Trường học</a></li>
+                      <li><a href="#">Công nghiệp</a></li>
+                      <li><a href="#">Nhà ở Xã hội</a></li>
+                      <li><a href="#">Trung tâm thương mại</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- CẤP 3: SMART CITY -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Smarty City</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <li><a href="#">Đường phố thông minh</a></li>
+                      <li><a href="#">Chiếu sáng cảnh quan</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Nông nghiệp thông minh</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <li><a href="#">Cây thanh long</a></li>
+                      <li><a href="#">Nuôi cấy mô</a></li>
+                      <li><a href="#">Ngư nghiệp</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Năng lượng mặt trời</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <li><a href="#">Điện mặt trời mái nhà</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Giải pháp OEM/ODM</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <li><a href="#">Năng lực ODM/EDM</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2 sản phẩm -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Sản phẩm</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li><a href="#">Sản phẩm dự án</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2 chủ đầu tư -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Chủ đầu tư</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Công cụ/Tài liệu kỹ thuật</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Hồ sơ năng lực</a></li>
+                      <li><a href="#">Catalogue</a></li>
+                      <li><a href="#">Bảng giá</a></li>
+                      <li><a href="#">công cụ tính toán chiếu sáng</a></li>
+                      <li><a href="#">Tính toán điện mặt trời mái nhà</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- CẤP 3 (không con) -->
+                  <li><a href="#">Liên hệ hỗ trợ</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2 tư vấn thiết kế-->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Tư vấn thiết kế</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Công cụ/Tài liệu kỹ thuật</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Hồ sơ năng lực</a></li>
+                      <li><a href="#">Catalogue</a></li>
+                      <li><a href="#">Bảng giá</a></li>
+                      <li><a href="#">Công cụ tính toán</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- CẤP 3 (không con) -->
+                  <li><a href="#">Liên hệ hỗ trợ</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2 nhà thầu thi công -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Nhà thầu thi công</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Công cụ/Tài liệu kỹ thuật</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Hồ sơ năng lực</a></li>
+                      <li><a href="#">Catalogue</a></li>
+                      <li><a href="#">Bảng giá</a></li>
+                      <li><a href="#">Công cụ tính toán</a></li>
+                      <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    </ul>
+                  </li>
+
+                  <!-- CẤP 3 (không con) -->
+                  <li><a href="#">Liên hệ hỗ trợ</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- CẤP 1: DÂN DỤNG -->
+          <li class="has-child">
+            <div class="menu-row">
+              <span>Dân dụng</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="mobile-sub">
+              <!-- CẤP 2 sản phẩm -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Sản phẩm</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Thiết bị thông minh</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4: LINKS -->
+                      <li><a href="#">Đèn thông minh</a></li>
+                      <li><a href="#">Công tắc thông minh</a></li>
+                      <li><a href="#">Ổ cắm thông minh</a></li>
+                      <li><a href="#">Cảm biến thông minh</a></li>
+                      <li><a href="#">Bảng điều khiển cảnh</a></li>
+                      <li><a href="#">Camera thông minh</a></li>
+                      <li><a href="#">Công tắc chuyển mạch</a></li>
+                      <li><a href="#">Ổ cắm chống giật</a></li>
+                      <li><a href="#">Bộ điều khiển trung tâm</a></li>
+                      <li><a href="#">Aptomat thông minh</a></li>
+                      <li><a href="#">Bộ lặp sóng</a></li>
+                      <li><a href="#">Combo Smart</a></li>
+                      <li><a href="#">Loa thông minh</a></li>
+                    </ul>
+                  </li>
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Sản phẩm chiếu sáng</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4: LINKS -->
+                      <li><a href="#">Đèn LED Downlight âm trần</a></li>
+                      <li><a href="#">Bóng đèn LED Bulb</a></li>
+                      <li><a href="#">Bộ đèn LED tuýp</a></li>
+                      <li><a href="#">Bóng đèn LED tuýp</a></li>
+                      <li><a href="#">Đèn LED ốp trần</a></li>
+                      <li><a href="#">Đèn LED Panel</a></li>
+                      <li><a href="#">Đèn LED chiếu pha</a></li>
+                      <li><a href="#">Đèn LED Highbay</a></li>
+                      <li><a href="#">Đèn đường LED</a></li>
+                      <li><a href="#">Sản phẩm học đường</a></li>
+                      <li><a href="#">Đèn LED dây</a></li>
+                      <li><a href="#">Đèn LED Tracklight</a></li>
+                      <li><a href="#">Đèn LED gắn tường</a></li>
+                      <li><a href="#">Đèn LED gương</a></li>
+                      <li><a href="#">Đèn ray LED</a></li>
+                      <li><a href="#">Đèn led Linear</a></li>
+                      <li><a href="#">Bộ đèn bán nguyệt</a></li>
+                      <li><a href="#">Đèn LED chỉ dẫn</a></li>
+                      <li><a href="#">Đèn LED chống ẩm</a></li>
+                      <li><a href="#">Phụ kiện đèn LED</a></li>
+                      <li><a href="#">Đèn pin</a></li>
+                    </ul>
+                  </li>
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Thiết bị điện</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4: LINKS -->
+                      <li><a href="#">Aptomat</a></li>
+                      <li><a href="#">Tủ Aptomat</a></li>
+                      <li><a href="#">Vỏ hộp Aptomat</a></li>
+                      <li><a href="#">Mặt Aptomat</a></li>
+                      <li><a href="#">Quạt hút</a></li>
+                      <li><a href="#">Ổ cắm điện</a></li>
+                      <li><a href="#">Phích cắm điện</a></li>
+                      <li><a href="#">Mặt công tắc</a></li>
+                      <li><a href="#">Hạt công tắc</a></li>
+                      <li><a href="#">Đèn bắt muỗi, côn trùng</a></li>
+                      <li><a href="#">Vợt bắt muỗi</a></li>
+                      <li><a href="#">Đèn điều hòa phòng tắm</a></li>
+                      <li><a href="#">Thiết bị cảm biến</a></li>
+                    </ul>
+                  </li>
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Năng lượng mặt trời</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4: LINKS -->
+                      <li><a href="#">Điện mặt trời mái nhà</a></li>
+                      <li><a href="#">Đèn năng lượng mặt trời</a></li>
+                    </ul>
+                  </li>
+                  <!-- CẤP 3 -->
+                  <li><a href="#">Đèn bảo vệ thị lực</a></li>
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Nông nghiệp thông minh</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4: LINKS -->
+                      <li><a href="#">Chiếu sáng ngư nghiệp</a></li>
+                      <li><a href="#">Chiếu sáng cây trồng</a></li>
+                    </ul>
+                  </li>
+                  <!-- CẤP 3 -->
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Phích nước</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4: LINKS -->
+                      <li><a href="#">Phích đựng nước</a></li>
+                      <li><a href="#">Bình nước cầm tay</a></li>
+                      <li><a href="#">Phích cầm tay</a></li>
+                      <li><a href="#">Bình giữ nhiệt</a></li>
+                      <li><a href="#">Bình đựng thức ăn</a></li>
+                      <li><a href="#">Bình ủ - Bình trà</a></li>
+                      <li><a href="#">Ruột phích</a></li>
+                      <li><a href="#">Phích pha trà - Cà phê</a></li>
+                      <li><a href="#">Phích quà tặng</a></li>
+                      <li><a href="#">Phích tết</a></li>
+                      <li><a href="#">Ấm siêu tốc</a></li>
+                      <li><a href="#">Cốc giữ nhiệt</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2 thông tin hỗ trợ -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Thông tin hỗ trợ</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li><a href="#">Câu hỏi thường gặp</a></li>
+                  <li><a href="#">Hướng dẫn sử dụng</a></li>
+                  <li><a href="#">Công trình thực tế</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2 công vụ tài liệu -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Thông tin hỗ trợ</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Catalogue</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Cảnh quan - Tâm linh</a></li>
+                      <li><a href="#">Đèn LED chiếu sáng</a></li>
+                      <li><a href="#">Đường phố</a></li>
+                      <li><a href="#">Học đường</a></li>
+                      <li><a href="#">Năng lượng mặt trời</a></li>
+                      <li><a href="#">Ngư nghiệp</a></li>
+                      <li><a href="#">Nhà ở xã hội</a></li>
+                      <li><a href="#">Nhà thông minh</a></li>
+                      <li><a href="#">NN-CNC</a></li>
+                      <li><a href="#">Phích nước</a></li>
+                      <li><a href="#">Thiết bị điện</a></li>
+                      <li><a href="#">Công trình dự án</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Công cụ tính toán chiếu sáng</a></li>
+                  <li><a href="#">Tính toán điện mặt trời mái nhà</a></li>
+                  <li><a href="#">Bảng giá</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2 điểm mua hàng -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Điểm mua hàng</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li><a href="#">Gian hàng trực tuyến</a></li>
+                  <li><a href="#">Cửa hàng đại lý</a></li>
+                  <li><a href="#">Showroom trải nghiệm</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- CẤP 1: HỢP TÁC KINH DOANH -->
+          <li class="has-child">
+            <div class="menu-row">
+              <span>Hợp tác kinh doanh</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="mobile-sub">
+              <!-- cấp 2 đại lý phân phối -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Đại lý phân phối</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li><a href="#">Sản phẩm</a></li>
+
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Công cụ/tài liệu</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Bảng giá</a></li>
+                      <li><a href="#">Catalogue</a></li>
+                      <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Đăng ký làm đại lý</a></li>
+                </ul>
+              </li>
+
+              <!-- cấp 2 đại lý ủy quyền -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Đại lý ủy quyền (Showroom)</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li><a href="#">Sản phẩm</a></li>
+                  <li><a href="#">Giải pháp</a></li>
+
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Công cụ/Tài liệu kỹ thuật</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Hồ sơ năng lực</a></li>
+                      <li><a href="#">Catalogue</a></li>
+                      <li><a href="#">Bảng giá</a></li>
+                      <li><a href="#">Công cụ tính toán chiếu sáng</a></li>
+                      <li><a href="#">Tính toán điện mặt trời mái nhà</a></li>
+                      <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+
+              <!-- cấp 2 đại lý Công trình dự án -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Đại lý Công trình dự án</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li><a href="#">Sản phẩm</a></li>
+                  <li><a href="#">Giải pháp</a></li>
+
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Công cụ/Tài liệu kỹ thuật</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Hồ sơ năng lực</a></li>
+                      <li><a href="#">Catalogue</a></li>
+                      <li><a href="#">Bảng giá</a></li>
+                      <li><a href="#">Công cụ tính toán</a></li>
+                      <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Liên hệ hỗ trợ</a></li>
+                </ul>
+              </li>
+
+              <!-- cấp 2 công ty công nghệ -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Công ty công nghệ</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li><a href="#">Sản phẩm</a></li>
+                  <li><a href="#">Giải pháp</a></li>
+                  <li><a href="#">Liên hệ hỗ trợ</a></li>
+                </ul>
+              </li>
+
+              <!-- cấp 2 thợ điện -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Thợ điện</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+
+                <ul class="mobile-sub">
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Công cụ/Tài liệu kỹ thuật</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Catalogue</a></li>
+                      <li><a href="#">Bảng giá</a></li>
+                      <li><a href="#">Công cụ tính toán</a></li>
+                      <li><a href="#">Hướng dẫn sử dụng</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Đăng ký đào tạo</a></li>
+                  <li><a href="#">Câu hỏi thường gặp</a></li>
+                </ul>
+              </li>
+            </ul>
+          </li>
+
+          <!-- CẤP 1: THƯ VIỆN -->
+          <li class="has-child">
+            <div class="menu-row">
+              <span>Thư viện</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="mobile-sub">
+              <li><a href="#">Công trình xanh</a></li>
+              <li><a href="#">Lĩnh vực giải pháp</a></li>
+              <li><a href="#">Chia sẻ của chuyên gia</a></li>
+              <li><a href="#">Kiến thức chiếu sáng</a></li>
+              <li><a href="#">Hỗ trợ</a></li>
+              <li><a href="#">Công bố chất lượng</a></li>
+              <li><a href="#">Chứng nhận ISO</a></li>
+              <li><a href="#">Chứng nhận tiến bộ kỹ thuật</a></li>
+              <li><a href="#">Chứng chỉ Quốc tế</a></li>
+            </ul>
+          </li>
+
+          <!-- CẤP 1: VỀ CHÚNG TÔI -->
+          <li class="has-child">
+            <div class="menu-row">
+              <span>Về chúng tôi</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="mobile-sub">
+              <!-- CẤP 2: Giới thiệu chung -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Giới thiệu chung</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <ul class="mobile-sub">
+                  <li><a href="#">Lịch sử phát triển</a></li>
+                  <li><a href="#">Sứ mệnh - Tầm nhìn</a></li>
+                  <li><a href="#">Hoạt động cộng đồng</a></li>
+                  <li><a href="#">Văn hóa Rạng Đông</a></li>
+                  <li><a href="#">Danh hiệu giải thưởng</a></li>
+                  <li><a href="#">Câu chuyện thương hiệu</a></li>
+                  <li><a href="#">Trách nhiệm xã hội</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2: năng lực -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Năng lực</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <ul class="mobile-sub">
+                  <li><a href="#">Năng lực tài chính</a></li>
+                  <li><a href="#">Năng lực thị trường</a></li>
+                  <li><a href="#">Năng lực sản xuất</a></li>
+                  <li><a href="#">Năng lực KHCN</a></li>
+                  <li><a href="#">Năng lực OEM & ODM</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2: tin tức -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Tin tức</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <ul class="mobile-sub">
+                  <li><a href="#">Nhà thông minh</a></li>
+                  <li><a href="#">Hoạt động - Sự kiện</a></li>
+
+                  <li class="has-child">
+                    <div class="menu-row">
+                      <span>Sản phẩm - Công nghệ</span>
+                      <i class="fa-solid fa-chevron-right"></i>
+                    </div>
+                    <ul class="mobile-sub">
+                      <!-- CẤP 4 -->
+                      <li><a href="#">Đèn LED chiếu sáng</a></li>
+                      <li><a href="#">Đèn năng lượng mặt trời</a></li>
+                      <li><a href="#">Phích nước</a></li>
+                      <li><a href="#">Sản phẩm chuyên dụng</a></li>
+                      <li><a href="#">Chiếu sáng cảnh quan</a></li>
+                      <li><a href="#">Đèn bàn bảo vệ thị lực</a></li>
+                      <li><a href="#">Học đường</a></li>
+                      <li><a href="#">Nông nghiệp công nghệ cao</a></li>
+                      <li><a href="#">Thiết bị điện</a></li>
+                    </ul>
+                  </li>
+
+                  <li><a href="#">Văn hóa nội bộ</a></li>
+                  <li><a href="#">Chuyển đổi số</a></li>
+                  <li><a href="#">Báo chí về Rạng Đông</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2: Thông tin cổ đông -->
+              <li class="has-child">
+                <div class="menu-row">
+                  <span>Thông tin cổ đông</span>
+                  <i class="fa-solid fa-chevron-right"></i>
+                </div>
+                <ul class="mobile-sub">
+                  <li><a href="#">Báo cáo tài chính</a></li>
+                  <li><a href="#">Thông báo cổ đông</a></li>
+                  <li><a href="#">Báo cáo thường niên</a></li>
+                  <li><a href="#">Đại hội đồng cổ đông</a></li>
+                </ul>
+              </li>
+
+              <!-- CẤP 2: tuyển dụng -->
+              <li><a href="#">Tuyển dụng</a></li>
+            </ul>
+          </li>
+
+          <!-- CẤP 1: LIÊN HỆ -->
+          <li class="has-child">
+            <div class="menu-row">
+              <span>Liên hệ</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="mobile-sub">
+              <li><a href="#">Liên hệ với chúng tôi</a></li>
+            </ul>
+          </li>
+
+          <!-- CẤP 1: EXPORT -->
+          <li class="has-child">
+            <div class="menu-row">
+              <span>Export</span>
+              <i class="fa-solid fa-chevron-right"></i>
+            </div>
+
+            <ul class="mobile-sub">
+              <li><a href="#">LED Products</a></li>
+              <li><a href="#">Vacuum flask</a></li>
+            </ul>
+          </li>
+
+          <!-- shopping cart -->
+          <li>
+            <a
+              href="https://rangdongstore.vn/chao-mung"
+              target="_blank"
+              class="sidebar-cart-btn"
+            >
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 122.9 107.5">
+                <path
+                  fill="currentColor"
+                  d="M3.9,7.9C1.8,7.9,0,6.1,0,3.9C0,1.8,1.8,0,3.9,0h10.2c0.1,0,0.3,0,0.4,0c3.6,0.1,6.8,0.8,9.5,2.5c3,1.9,5.2,4.8,6.4,9.1c0,0.1,0,0.2,0.1,0.3l1,4H119c2.2,0,3.9,1.8,3.9,3.9c0,0.4-0.1,0.8-0.2,1.2l-10.2,41.1c-0.4,1.8-2,3-3.8,3H44.7c1.4,5.2,2.8,8,4.7,9.3c2.3,1.5,6.3,1.6,13,1.5h0.1h45.2c2.2,0,3.9,1.8,3.9,3.9c0,2.2-1.8,3.9-3.9,3.9H62.5c-8.3,0.1-13.4-0.1-17.5-2.8c-4.2-2.8-6.4-7.6-8.6-16.3L23,13.9c0-0.1,0-0.1-0.1-0.2c-0.6-2.2-1.6-3.7-3-4.5c-1.4-0.9-3.3-1.3-5.5-1.3c-0.1,0-0.2,0-0.3,0H3.9zM96,88.3c5.3,0,9.6,4.3,9.6,9.6c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6C86.4,92.6,90.7,88.3,96,88.3zM53.9,88.3c5.3,0,9.6,4.3,9.6,9.6c0,5.3-4.3,9.6-9.6,9.6c-5.3,0-9.6-4.3-9.6-9.6C44.3,92.6,48.6,88.3,53.9,88.3zM33.7,23.7l8.9,33.5h63.1l8.3-33.5H33.7z"
+                />
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
     </div>
   </body>
 </html>

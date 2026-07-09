@@ -191,4 +191,42 @@ $(document).ready(function () {
       closeSearch();
     }
   });
+
+  const $sidebar = $("#mobileSidebar");
+  const $overlay = $("#sidebarOverlay");
+
+  // Mở/Đóng Sidebar (giữ nguyên của bạn)
+  $("#mobileMenuOpen").click(function () {
+    $sidebar.addClass("active");
+    $overlay.addClass("active");
+    $("body").css("overflow", "hidden");
+  });
+
+  function closeSidebar() {
+    $sidebar.removeClass("active");
+    $overlay.removeClass("active");
+    $("body").css("overflow", "");
+  }
+
+  $("#mobileMenuClose, #sidebarOverlay").click(closeSidebar);
+
+  // --- XỬ LÝ MENU ĐA CẤP ---
+  $(".menu-row").click(function (e) {
+    e.preventDefault();
+
+    // Tìm menu con ngay sau nó
+    const $subMenu = $(this).next(".mobile-sub");
+
+    if ($subMenu.length > 0) {
+      // Toggle mở/đóng
+      $subMenu.slideToggle(300);
+
+      // Thêm class active để xoay mũi tên
+      $(this).toggleClass("active");
+
+      // Đóng các menu con khác cùng cấp (tùy chọn - nếu muốn menu gọn)
+      $(this).parent().siblings().find(".mobile-sub").slideUp(300);
+      $(this).parent().siblings().find(".menu-row").removeClass("active");
+    }
+  });
 });
