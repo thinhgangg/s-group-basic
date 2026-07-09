@@ -542,21 +542,22 @@ header {
 
 .banner-title span::before {
   content: "";
-  width: 62px;
-  height: 40px;
-  background-size: 100%;
+  width: 1.2em;
+  height: 0.8em;
+  background-size: contain;
   background-repeat: no-repeat;
   display: inline-block;
+  vertical-align: middle;
 }
 
 .banner-title span.green1::before {
   background-image: url(../images/icon_leaf.png);
-  transform: translate(-32px, -16px);
+  transform: translate(-0.8em, -0.5em);
 }
 
 .banner-title span.green2::before {
   background-image: url(../images/icon-green2.png);
-  transform: translate(-32px, -16px);
+  transform: translate(-0.7em, -0.5em);
 }
 
 /* highlights */
